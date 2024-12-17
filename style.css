@@ -1,6 +1,7 @@
 /*  work sansfonts style */
 
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@400;600;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* share style */
 
 * {
@@ -17,6 +18,10 @@
   font-weight: 600;
   cursor: pointer;
   border: 0;
+}
+.text-light-gray {
+  font-size: 1rem;
+  color: #727272;
 }
 /* header style */
 header {
@@ -57,10 +62,7 @@ nav li a {
   font-weight: 700;
   font-size: 4rem;
 }
-.banner-description {
-  font-size: 1rem;
-  color: #727272;
-}
+
 .banner img {
   width: 100%;
   margin-top: 20px;
@@ -68,9 +70,9 @@ nav li a {
 /* main style */
 main {
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 70px auto;
 }
-/* teams realted style */
+/* teams related style */
 .teams-container {
   display: flex;
   align-items: center;
@@ -102,8 +104,16 @@ main {
   header {
     padding: 20px;
   }
-  nav {
+  nav,
+  .teams-container {
     flex-direction: column;
+  }
+  .teams-img-container {
+    grid-template-columns: 1fr;
+  }
+  .teams-content {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 /* medium devices */
@@ -111,7 +121,11 @@ main {
   header {
     padding: 50px;
   }
-  nav {
+  nav,
+  .teams-container {
     flex-direction: column;
+  }
+  .teams-img-container {
+    grid-template-columns: 1fr;
   }
 }
