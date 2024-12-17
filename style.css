@@ -1,11 +1,22 @@
 /*  work sansfonts style */
 
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@400;600;700;800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* share style */
 
 * {
   font-family: "Work Sans", sans-serif;
   font-family: "Lato" sans-serif;
   font-family: "Open" sans-serif;
+}
+.btn-primary {
+  background: #ff900e;
+  border-radius: 8px;
+  padding: 20px 25px;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
 }
 /* header style */
 header {
@@ -49,4 +60,27 @@ nav li a {
 .banner-description {
   font-size: 1rem;
   color: #727272;
+}
+.banner img {
+  width: 100%;
+  margin-top: 20px;
+}
+/* responsive media */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav {
+    flex-direction: column;
+  }
+}
+/* medium devices */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
 }
