@@ -171,6 +171,17 @@ main {
 .ten-years-badge p {
   font-size: 1.5rem;
 }
+.footer {
+  border-radius: 8px;
+  background: #fff4e7;
+  width: 1440px;
+  height: 100px;
+  margin-top: 100px;
+  margin-left: 240px;
+}
+.footer-section {
+  padding: 20px 410px 20px 410px;
+}
 /* responsive media */
 /* mobile devices */
 @media screen and (max-width: 576px) {
